@@ -2,8 +2,23 @@ doctype html
 html(lang='en')
 	head
 		meta(charset="utf-8")
-		title Untitled
+		title lingo
+
+		block head
+			ul.nav.nav-tabs(role='tablist')
+				li.active 
+					a(href='/translate') translate
+				li
+					a(href='/quiz') quiz
+				li
+					a(href='/progress') progress
 
 	body
 		block content
+
+
+		block scripts
+		script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+		script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+		script(src="/index.js")
 		

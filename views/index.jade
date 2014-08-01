@@ -1,22 +1,15 @@
 extends layout
-block header
-	ul.nav.nav-tabs(role='tablist')
-		li.active 
-			a(href='/translate')
-		li
-			a(href='/quiz')
-		li
-			a(href='/progress')
 
-
-	<ul class="nav nav-tabs" role="tablist">
-  <li class="active"><a href="#">Home</a></li>
-  <li><a href="#">Profile</a></li>
-  <li><a href="#">Messages</a></li>
-</ul>
 
 
 block content
 	h1 Welcome to 'Lingo!' 
 		p A lanuguage translator and quiz
+
+	form.formTranslate
+		input.wordOrigin(type='text' placeholder='origin')
+		input.lanuguageTo(type='text' placeholder='lanuguageTo')
+		input.wordToTranslate(type='text' placeholder='word input')
+		input.submitTranslate(type='submit' value='Get Translation')
+
 
