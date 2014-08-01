@@ -1,11 +1,13 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var indexController = require('./controllers/index.js');
+var indexController = require('./controllers/indexController.js');
 var BeGlobal = require('node-beglobal')
 
 var beglobal = new BeGlobal.BeglobalAPI({
 	api_token: 'MeMHky1K%2BZlBxV%2Fi1mimAA%3D%3D'
 })
+
+
 
 
 var app = express();
